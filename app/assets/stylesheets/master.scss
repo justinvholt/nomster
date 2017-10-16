@@ -41,3 +41,28 @@ body {
   padding: 20px;
 }
 
+.pagination {
+  font-size: 18px;
+  padding-top: 2px;
+  padding-bottom: 2px;  
+  
+  a {
+   margin-right: 0.5em;
+  }
+  .previous_page {
+    margin-left: 1em;
+    margin-right: 0.5em;
+  }
+  .previous_page.disabled {
+    margin-right: 0.5em;
+  }
+  .current {
+    margin-right: 0.5em;
+  }
+  .next_page {
+    margin-right: 0.5em;
+  }
+  .next_page.disabled {
+    margin-right: 0.5em;
+  }
+}

@@ -1,3 +1,7 @@
+<div class="pagination">
+  <%= will_paginate @places %>
+</div>
+
 <% @places.each do |place| %>
   <div class="frosted-box col-10 offset-1">
     <h1><%= place.name %></h1>
@@ -6,3 +10,7 @@
   </div>
 
 <% end %>
+
+<div class="pagination">
+  <%= will_paginate @places %>
+</div>
