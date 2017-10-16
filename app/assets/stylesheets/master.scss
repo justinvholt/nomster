@@ -17,8 +17,12 @@ body {
   text-shadow: 2px 2px 4px #000000;
 }
 
-.navbar-brand {
-  font-size: 28px;
+.navbar-inverse .navbar-brand {
+  font-family: 'Vollkorn', serif;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
 }
 
 .nav-link {
