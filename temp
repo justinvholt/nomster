@@ -1,0 +1,101 @@
+2017-10-20T14:44:48.301247+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 25311 -e production`
+2017-10-20T14:44:54.833702+00:00 app[web.1]: => Booting Puma
+2017-10-20T14:44:54.833729+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2017-10-20T14:44:54.833728+00:00 app[web.1]: => Rails 5.0.6 application starting in production on http://0.0.0.0:25311
+2017-10-20T14:44:54.833730+00:00 app[web.1]: Puma starting in single mode...
+2017-10-20T14:44:54.833742+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2017-10-20T14:44:54.833743+00:00 app[web.1]: * Environment: production
+2017-10-20T14:44:54.833735+00:00 app[web.1]: * Version 3.10.0 (ruby 2.3.4-p301), codename: Russell's Teapot
+2017-10-20T14:44:54.833887+00:00 app[web.1]: * Listening on tcp://0.0.0.0:25311
+2017-10-20T14:44:54.834500+00:00 app[web.1]: Use Ctrl-C to stop
+2017-10-20T14:44:55.114382+00:00 heroku[web.1]: State changed from starting to up
+2017-10-20T14:44:55.951242+00:00 heroku[router]: at=info method=GET path="/assets/application-81a230dd106e1a2628b4e329324a548af18afb618ae0400b9b05a7c811ec9e24.js" host=nomster-justin-holt.herokuapp.com request_id=3ff66a0c-1c68-4f87-aa0d-72c1ee398d70 fwd="68.250.113.206" dyno=web.1 connect=0ms service=2ms status=304 bytes=48 protocol=https
+2017-10-20T14:44:56.046032+00:00 heroku[router]: at=info method=GET path="/assets/application-b2b72aa3606c91fbe568e9bac2c238fdfbaa9b09648b4a9b2589fff8265c48a5.css" host=nomster-justin-holt.herokuapp.com request_id=a572f970-6b0e-402a-bc33-b2fc110d8e34 fwd="68.250.113.206" dyno=web.1 connect=6ms service=6ms status=304 bytes=48 protocol=https
+2017-10-20T14:44:56.572422+00:00 heroku[router]: at=info method=GET path="/assets/restaurant_icons-acf9726adde868747ab0699c9fac3900d47a84074bf7c0977ed9e1186bf5fdeb.png" host=nomster-justin-holt.herokuapp.com request_id=ab59ed4b-32b2-45b7-a77d-8dd029c7cb6d fwd="68.250.113.206" dyno=web.1 connect=3ms service=2ms status=304 bytes=48 protocol=https
+2017-10-20T14:44:56.569108+00:00 heroku[router]: at=info method=GET path="/assets/food-4f3a2b934d03f3d064c5f214e705bc2b212ed55ea8b8fd2811e2acedca5d2ec8.png" host=nomster-justin-holt.herokuapp.com request_id=808fce60-4192-4814-9685-dd4e1a3418ec fwd="68.250.113.206" dyno=web.1 connect=1ms service=2ms status=304 bytes=48 protocol=https
+2017-10-20T14:44:56.633567+00:00 heroku[router]: at=info method=GET path="/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" host=nomster-justin-holt.herokuapp.com request_id=c6887228-67e5-4a42-ba98-d10ccb2fc2dc fwd="68.250.113.206" dyno=web.1 connect=0ms service=8ms status=304 bytes=48 protocol=https
+2017-10-20T15:20:56.280950+00:00 heroku[web.1]: Idling
+2017-10-20T15:20:56.280950+00:00 heroku[web.1]: State changed from up to down
+2017-10-20T15:20:57.367723+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-10-20T15:20:57.409091+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2017-10-20T15:20:57.434220+00:00 app[web.1]: === puma shutdown: 2017-10-20 15:20:57 +0000 ===
+2017-10-20T15:20:57.434229+00:00 app[web.1]: - Goodbye!
+2017-10-20T15:20:57.452383+00:00 app[web.1]: Exiting
+2017-10-20T15:20:58.354461+00:00 heroku[web.1]: Process exited with status 143
+2017-10-21T06:57:06.260253+00:00 heroku[web.1]: Unidling
+2017-10-21T06:57:06.260530+00:00 heroku[web.1]: State changed from down to starting
+2017-10-21T06:57:09.584336+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 18958 -e production`
+2017-10-21T06:57:13.946642+00:00 app[web.1]: => Booting Puma
+2017-10-21T06:57:13.946659+00:00 app[web.1]: => Rails 5.0.6 application starting in production on http://0.0.0.0:18958
+2017-10-21T06:57:13.946661+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2017-10-21T06:57:13.946661+00:00 app[web.1]: Puma starting in single mode...
+2017-10-21T06:57:13.946667+00:00 app[web.1]: * Version 3.10.0 (ruby 2.3.4-p301), codename: Russell's Teapot
+2017-10-21T06:57:13.946668+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2017-10-21T06:57:13.946668+00:00 app[web.1]: * Environment: production
+2017-10-21T06:57:13.946750+00:00 app[web.1]: * Listening on tcp://0.0.0.0:18958
+2017-10-21T06:57:13.947186+00:00 app[web.1]: Use Ctrl-C to stop
+2017-10-21T06:57:14.479086+00:00 heroku[web.1]: State changed from starting to up
+2017-10-21T06:57:15.325386+00:00 app[web.1]: I, [2017-10-21T06:57:15.325267 #4]  INFO -- : [ccaded20-d755-47f4-86d1-e14fad0b1937] Started GET "/?page=3" for 68.250.113.206 at 2017-10-21 06:57:15 +0000
+2017-10-21T06:57:15.332737+00:00 app[web.1]: I, [2017-10-21T06:57:15.332650 #4]  INFO -- : [ccaded20-d755-47f4-86d1-e14fad0b1937] Processing by PlacesController#index as HTML
+2017-10-21T06:57:15.332855+00:00 app[web.1]: I, [2017-10-21T06:57:15.332751 #4]  INFO -- : [ccaded20-d755-47f4-86d1-e14fad0b1937]   Parameters: {"page"=>"3"}
+2017-10-21T06:57:15.354287+00:00 app[web.1]: I, [2017-10-21T06:57:15.354147 #4]  INFO -- : [ccaded20-d755-47f4-86d1-e14fad0b1937]   Rendering places/index.html.erb within layouts/application
+2017-10-21T06:57:15.411760+00:00 app[web.1]: D, [2017-10-21T06:57:15.411590 #4] DEBUG -- : [ccaded20-d755-47f4-86d1-e14fad0b1937]   [1m[35m (9.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "places"[0m
+2017-10-21T06:57:15.445562+00:00 app[web.1]: D, [2017-10-21T06:57:15.445415 #4] DEBUG -- : [ccaded20-d755-47f4-86d1-e14fad0b1937]   [1m[36mPlace Load (0.9ms)[0m  [1m[34mSELECT  "places".* FROM "places" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 10]]
+2017-10-21T06:57:15.460638+00:00 app[web.1]: I, [2017-10-21T06:57:15.460494 #4]  INFO -- : [ccaded20-d755-47f4-86d1-e14fad0b1937]   Rendered places/index.html.erb within layouts/application (106.1ms)
+2017-10-21T06:57:15.475885+00:00 app[web.1]: I, [2017-10-21T06:57:15.475730 #4]  INFO -- : [ccaded20-d755-47f4-86d1-e14fad0b1937] Completed 200 OK in 143ms (Views: 123.7ms | ActiveRecord: 29.5ms)
+2017-10-21T06:57:15.557435+00:00 heroku[router]: at=info method=GET path="/assets/application-b2b72aa3606c91fbe568e9bac2c238fdfbaa9b09648b4a9b2589fff8265c48a5.css" host=nomster-justin-holt.herokuapp.com request_id=bca15b44-50c6-4130-a04f-b33fdee7f562 fwd="68.250.113.206" dyno=web.1 connect=2ms service=6ms status=200 bytes=27503 protocol=https
+2017-10-21T06:57:15.476873+00:00 heroku[router]: at=info method=GET path="/?page=3" host=nomster-justin-holt.herokuapp.com request_id=ccaded20-d755-47f4-86d1-e14fad0b1937 fwd="68.250.113.206" dyno=web.1 connect=1ms service=158ms status=200 bytes=4653 protocol=https
+2017-10-21T06:57:15.611094+00:00 heroku[router]: at=info method=GET path="/assets/application-81a230dd106e1a2628b4e329324a548af18afb618ae0400b9b05a7c811ec9e24.js" host=nomster-justin-holt.herokuapp.com request_id=df7ccb75-ddd3-48e3-bbff-f46e624d2f57 fwd="68.250.113.206" dyno=web.1 connect=2ms service=6ms status=200 bytes=71098 protocol=https
+2017-10-21T06:57:15.814149+00:00 heroku[router]: at=info method=GET path="/assets/food-4f3a2b934d03f3d064c5f214e705bc2b212ed55ea8b8fd2811e2acedca5d2ec8.png" host=nomster-justin-holt.herokuapp.com request_id=c03b9f90-46a8-47c0-a5ea-669d6d3b915d fwd="68.250.113.206" dyno=web.1 connect=1ms service=5ms status=200 bytes=5378 protocol=https
+2017-10-21T06:57:15.849441+00:00 heroku[router]: at=info method=GET path="/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" host=nomster-justin-holt.herokuapp.com request_id=44c21b8a-c27a-473f-8956-4c497f8b49e3 fwd="68.250.113.206" dyno=web.1 connect=1ms service=6ms status=200 bytes=77305 protocol=https
+2017-10-21T06:57:15.814714+00:00 heroku[router]: at=info method=GET path="/assets/restaurant_icons-acf9726adde868747ab0699c9fac3900d47a84074bf7c0977ed9e1186bf5fdeb.png" host=nomster-justin-holt.herokuapp.com request_id=d47f9060-33eb-4aa6-85fd-3fef35d6fa31 fwd="68.250.113.206" dyno=web.1 connect=0ms service=7ms status=200 bytes=14687 protocol=https
+2017-10-21T07:33:59.672798+00:00 heroku[web.1]: Idling
+2017-10-21T07:33:59.673421+00:00 heroku[web.1]: State changed from up to down
+2017-10-21T07:34:00.326989+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2017-10-21T07:34:00.328124+00:00 app[web.1]: === puma shutdown: 2017-10-21 07:34:00 +0000 ===
+2017-10-21T07:34:00.328180+00:00 app[web.1]: - Goodbye!
+2017-10-21T07:34:00.328497+00:00 app[web.1]: Exiting
+2017-10-21T07:34:00.315848+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-10-21T07:34:00.459585+00:00 heroku[web.1]: Process exited with status 143
+2017-10-21T08:02:15.000000+00:00 app[api]: Build started by user justinvholt@gmail.com
+2017-10-21T08:02:36.459241+00:00 app[api]: Deploy 418787c3 by user justinvholt@gmail.com
+2017-10-21T08:02:36.459241+00:00 app[api]: Release v16 created by user justinvholt@gmail.com
+2017-10-21T08:02:38.563434+00:00 heroku[web.1]: State changed from down to starting
+2017-10-21T08:02:15.000000+00:00 app[api]: Build succeeded
+2017-10-21T08:02:41.683628+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 40710 -e production`
+2017-10-21T08:02:45.667491+00:00 app[web.1]: => Booting Puma
+2017-10-21T08:02:45.667510+00:00 app[web.1]: => Rails 5.0.6 application starting in production on http://0.0.0.0:40710
+2017-10-21T08:02:45.667512+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2017-10-21T08:02:45.667512+00:00 app[web.1]: Puma starting in single mode...
+2017-10-21T08:02:45.667517+00:00 app[web.1]: * Version 3.10.0 (ruby 2.3.4-p301), codename: Russell's Teapot
+2017-10-21T08:02:45.667519+00:00 app[web.1]: * Environment: production
+2017-10-21T08:02:45.667518+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2017-10-21T08:02:45.667629+00:00 app[web.1]: * Listening on tcp://0.0.0.0:40710
+2017-10-21T08:02:45.668035+00:00 app[web.1]: Use Ctrl-C to stop
+2017-10-21T08:02:45.904902+00:00 heroku[web.1]: State changed from starting to up
+2017-10-21T08:03:10.870378+00:00 app[api]: Starting process with command `bundle exec rake db:migrate` by user justinvholt@gmail.com
+2017-10-21T08:03:15.057571+00:00 heroku[run.2467]: Awaiting client
+2017-10-21T08:03:15.090825+00:00 heroku[run.2467]: Starting process with command `bundle exec rake db:migrate`
+2017-10-21T08:03:15.309784+00:00 heroku[run.2467]: State changed from starting to up
+2017-10-21T08:03:22.094208+00:00 heroku[run.2467]: State changed from up to complete
+2017-10-21T08:03:22.084179+00:00 heroku[run.2467]: Process exited with status 0
+2017-10-21T08:03:26.570581+00:00 heroku[web.1]: Restarting
+2017-10-21T08:03:26.571343+00:00 heroku[web.1]: State changed from up to starting
+2017-10-21T08:03:27.152359+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-10-21T08:03:27.160766+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2017-10-21T08:03:27.176581+00:00 app[web.1]: Exiting
+2017-10-21T08:03:27.181007+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/puma-3.10.0/lib/puma/server.rb:395:in `close': can't modify frozen IOError (RuntimeError)
+2017-10-21T08:03:27.181012+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.3.0/gems/puma-3.10.0/lib/puma/server.rb:395:in `ensure in handle_servers'
+2017-10-21T08:03:27.181015+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.3.0/gems/puma-3.10.0/lib/puma/server.rb:398:in `handle_servers'
+2017-10-21T08:03:27.181017+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.3.0/gems/puma-3.10.0/lib/puma/server.rb:327:in `block in run'
+2017-10-21T08:03:27.330328+00:00 heroku[web.1]: Process exited with status 1
+2017-10-21T08:03:35.719642+00:00 app[web.1]: => Booting Puma
+2017-10-21T08:03:35.719672+00:00 app[web.1]: => Rails 5.0.6 application starting in production on http://0.0.0.0:38154
+2017-10-21T08:03:35.719681+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2017-10-21T08:03:35.719682+00:00 app[web.1]: Puma starting in single mode...
+2017-10-21T08:03:35.719687+00:00 app[web.1]: * Version 3.10.0 (ruby 2.3.4-p301), codename: Russell's Teapot
+2017-10-21T08:03:35.719695+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2017-10-21T08:03:35.719696+00:00 app[web.1]: * Environment: production
+2017-10-21T08:03:35.719794+00:00 app[web.1]: * Listening on tcp://0.0.0.0:38154
+2017-10-21T08:03:35.720419+00:00 app[web.1]: Use Ctrl-C to stop
+2017-10-21T08:03:35.948177+00:00 heroku[web.1]: State changed from starting to up
