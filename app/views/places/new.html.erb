@@ -8,3 +8,17 @@
     <%= f.submit 'Create', class: 'btn btn-primary' %>
   <% end %>
 </div>
+
+def humanized_rating()
+  rating =  RATINGS.invert[self.rating].to_i
+  output = []
+  rating.times do 
+    output.push('<i class="fa fa-star" aria-hidden="true"></i>')
+  end
+  if rating < 5
+    (5-rating).times do
+        output.push('<i class="fa fa-star-o" aria-hidden="true"></i>')
+      end
+  end
+    output.join("")
+end

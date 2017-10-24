@@ -44,14 +44,18 @@
   <br />
 </div>
 
-<div class="clear"></div>
+  <div class="clear"></div>
 
-<div class="col-10 offset-1">
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-    Add a Comment
-  </button>
+  <div class="col-10 offset-1">
+    <h1 class="float-left">Comments</h1>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+      Add a comment
+    </button>
+  </div>
   
+  <div class="clear"></div>
+
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -77,22 +81,27 @@
   </div>
 </div>
 
-<br />
-
-<div class="col-10 offset-1">
-  <h1>Comments</h1>
-</div>
-
-<div class="frosted-box col-10 offset-1">
+<div class="row col-11 offset-1">
   <% @place.comments.each do |comment| %>
-    <div>
-      <blockquote>
-        <% if comment.humanized_rating.present? %>
-          <b><%= comment.humanized_rating %></b> -
-        <% end %>
-        <%= comment.message %><br />
-        <small><%= comment.user.email %></small>
-      </blockquote>
+    <div class="frosted-box col-12 col-sm-5" !>
+    <% if comment.humanized_rating.present? %>
+      <% comment.rating.to_i.times do%>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      <%end%>
+      <% if comment.rating.to_i < 5 %>
+          <% (5-comment.rating.to_i).times do %>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          <% end %>
+      <% end %>
+    <% end %>
+
+    <blockquote>
+      <%= comment.message %><br />
+      <small>Reviewer: <%= comment.user.email %></small>
+    </blockquote>
     </div>
+    <div class="col-sm-1"></div>
   <% end %>
 </div>
+
+
