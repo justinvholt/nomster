@@ -11,6 +11,27 @@
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>
+  
+  <% if place.comments.present? %>
+    <div class="col-12">
+      <% if place.comments.last.humanized_rating.present? %>
+        <br />
+        <% place.comments.last.rating.to_i.times do%>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        <%end%>
+        <% if place.comments.last.rating.to_i < 5 %>
+          <% (5-place.comments.last.rating.to_i).times do %>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          <% end %>
+        <% end %>
+      <% end %>
+  
+      <blockquote>
+        <%= place.comments.last.message %><br />
+        <small>Reviewer: <%= place.comments.last.user.email %></small>
+      </blockquote>
+      </div>
+    <% end %>
   </div>
 <% end %>
 

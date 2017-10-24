@@ -44,38 +44,38 @@
   <br />
 </div>
 
-  <div class="clear"></div>
+<div class="clear"></div>
 
-  <div class="col-10 offset-1">
-    <h1 class="float-left">Comments</h1>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
-      Add a comment
-    </button>
-  </div>
-  
-  <div class="clear"></div>
+<div class="col-10 offset-1">
+  <h1 class="float-left">Comments</h1>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+    Add a comment
+  </button>
+</div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Add a Comment</h4>
+<div class="clear"></div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Add a Comment</h4>
+      </div>
+      <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
+        <div class="modal-body">
+          <%= f.input :message %>
+          <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
         </div>
-        <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
-          <div class="modal-body">
-            <%= f.input :message %>
-            <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
-          </div>
-        <% end %>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+        </div>
+      <% end %>
       </div>
     </div>
   </div>
@@ -89,9 +89,9 @@
         <i class="fa fa-star" aria-hidden="true"></i>
       <%end%>
       <% if comment.rating.to_i < 5 %>
-          <% (5-comment.rating.to_i).times do %>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-          <% end %>
+        <% (5-comment.rating.to_i).times do %>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        <% end %>
       <% end %>
     <% end %>
 
