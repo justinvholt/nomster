@@ -21,8 +21,8 @@ body {
   font-family: 'Vollkorn', serif;
   font-weight: bold;
   font-size: 30px;
-  letter-spacing: -0.3px;
   color: #FFFFFF;
+  letter-spacing: -0.3px;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -32,6 +32,14 @@ body {
   font-size: 20px;
   color: #FFFFFF;
   letter-spacing: -0.3px;
+}
+
+.navbar-nav {
+  color: #FFFFFF;
+}
+
+.fa-plus-circle:before {
+    content: "\f055";
 }
 
 .frosted-box {
@@ -51,6 +59,10 @@ body {
   background-color: #FFEEEE;
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
+}
+
+.home-button {
+  margin-left: 1em;
 }
 
 .pagination {

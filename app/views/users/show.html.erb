@@ -1,0 +1,88 @@
+<div class="pagination">
+  <a href="/" class="home-button">
+    ← Home
+  </a>
+</div>
+
+<div class="frosted-box col-10 offset-1">
+  <div class="row">
+    <div class="col-4">
+      <%= image_tag "user.png" %>
+    </div>
+
+    <div class="col-8">
+      <h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
+        
+      <h4>Total Comments: <%= @user.comments.count %></h4>
+      <h4>Total 5-Star Reviews: <%= @user.comments.where(rating: "5_stars").count %></h4>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<br /><br />
+<h1 class="text-center">My Comments</h1>
+<br />
+<div class="row col-11 offset-1">
+<% @user.comments.each do |comment| %>
+  <div class="frosted-box col-12 col-sm-5" !>
+      <% if comment.humanized_rating.present? %>
+        <% comment.rating.to_i.times do%>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        <%end%>
+        <% if comment.rating.to_i < 5 %>
+          <% (5-comment.rating.to_i).times do %>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          <% end %>
+        <% end %>
+      <% end %>
+    
+    <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
+    <blockquote>
+      <%= comment.message %><br />
+      <small>Reviewer: <%= comment.user.email %></small>
+    </blockquote>
+    </div>
+    <div class="col-sm-1"></div>
+  <% end %>
+</div>
+
+<div class="clear"></div>
+
+<br /><br />
+<h1 class="text-center">My Places</h1>
+<br />
+<% @user.places.each do |place| %>
+  <div class="frosted-box col-10 offset-1">
+    <h1><%= link_to place.name, place_path(place) %></h1>
+    <i><%= place.address %></i><br/><br/>
+    <p><%= place.description %></p><br/>
+
+    <% if place.user.present? %>
+      <small><%= place.user.email %></small>
+    <% end %>
+  
+  <% if place.comments.present? %>
+    <div class="col-12">
+      <% if place.comments.last.humanized_rating.present? %>
+        <br />
+        <% place.comments.last.rating.to_i.times do%>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        <%end%>
+        <% if place.comments.last.rating.to_i < 5 %>
+          <% (5-place.comments.last.rating.to_i).times do %>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          <% end %>
+        <% end %>
+      <% end %>
+  
+      <blockquote>
+        <%= place.comments.last.message %><br />
+        <small>Reviewer: <%= place.comments.last.user.email %></small>
+      </blockquote>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<div class="clear"></div>

@@ -13,22 +13,24 @@
 
   <body>
     
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse vcenter">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <%= link_to "Nomster", root_path, class: "navbar-brand" %>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-          <li class="nav-item">
-            <%= link_to new_place_path, class: "nav-link" do %>
-              <i class="fa fa-plus-circle"></i>
-              Enter a New Place
-              <% end %>
-          </li>
+          <a class="nav-link" href="/places/new"> 
+            <i class="fa fa-plus-circle"></i>
+            Enter a New Place
+          </a>
+          <li class="nav-item"></li>
         </ul>
-        <ul class="navbar_nav">
+        <ul class="navbar-nav">
           <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to "My Profile", user_path(current_user), class: "nav-link" %>
+          </li>
             <li class="nav_item">
               <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
             </li>
@@ -43,7 +45,7 @@
         </ul>
       </div>
     </nav>
-
+    
     <% if notice.present? %>
       <p class="notice alert-info"><%= notice %></p>
     <% end %>
