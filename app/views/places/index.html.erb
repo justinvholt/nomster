@@ -32,7 +32,14 @@
 <% @places.each do |place| %>
   <div class="frosted-box col-10 offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1>
-    <i><%= place.address %></i><br/><br/>
+    <i><%= place.address %></i><br /><br />
+    
+    <% photo = place.photos.first %>
+    <% if photo %> 
+      <center><%= image_tag(photo.picture, height: "300px", width: "625px") %></center>
+      <br />
+    <% end %>    
+
     <p><%= place.description %></p><br/>
 
     <% if place.user.present? %>
