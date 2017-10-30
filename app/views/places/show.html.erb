@@ -114,7 +114,7 @@
   <div class="col-10 offset-1">
       <h1>Photos</h1>
       <% @place.photos.each do |photo| %>
-          <%= image_tag(photo.picture, height: "100%", width: "100%") %>
+          <%= image_tag(photo.picture, height: "75%", width: "100%") %><br />
           <%= photo.caption %>
           <br /><br />
       <% end %>
