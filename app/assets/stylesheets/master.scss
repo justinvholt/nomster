@@ -15,6 +15,7 @@ body {
 .navbar {
   background: image_url('food.png');
   color: white;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -24,6 +25,7 @@ body {
   color: #FFFFFF;
   letter-spacing: -0.3px;
   text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 0;
 }
 
 .nav-link {
@@ -140,4 +142,25 @@ blockquote p {
 .fa-star-o:before {
     font-size: 20px;
     content: "\f006";
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  display: block;
+  max-height: 550px;
+  max-width: 100%;
+  height: auto;
+  line-height: 1;
+}
+
+.carousel-caption {
+  font-family: 'Vollkorn', serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: -0.3px;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
 }
