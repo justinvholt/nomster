@@ -1,8 +1,6 @@
 class PlacesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :delete]
   
-  # @admin = Place.where(:user_id => 1)
-
   def index
     @places = Place.all.paginate(page: params[:page], per_page: 5) 
   end

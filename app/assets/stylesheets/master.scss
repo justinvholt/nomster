@@ -12,9 +12,12 @@ body {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
+.navbar-inverse .navbar-nav .nav-link {
+  color: white;
+}
+
 .navbar {
   background: image_url('food.png');
-  color: white;
   margin-bottom: 0;
 }
 
@@ -22,7 +25,6 @@ body {
   font-family: 'Vollkorn', serif;
   font-weight: bold;
   font-size: 30px;
-  color: #FFFFFF;
   letter-spacing: -0.3px;
   text-shadow: 2px 2px 4px #000000;
   margin-bottom: 0;
@@ -32,12 +34,7 @@ body {
   font-family: 'Vollkorn', serif;
   font-weight: bold;
   font-size: 20px;
-  color: #FFFFFF;
   letter-spacing: -0.3px;
-}
-
-.navbar-nav {
-  color: #FFFFFF;
 }
 
 .fa-plus-circle:before {
